@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome, <span id="userName"></span>!</h1>
+  <p>Here is your information:</p>
+  <ul style="list-style: none; padding: 0;">
+    <li><strong>Email:</strong> <span id="userEmail"></span></li>
+    <li><strong>Mobile:</strong> <span id="userMobile"></span></li>
+    <li><strong>Gender:</strong> <span id="userGender"></span></li>
+    <li><strong>Address:</strong> <span id="userAddress"></span></li>
+  </ul>
+  <script>
+    // Retrieve user data from localStorage
+    document.getElementById("userName").textContent = localStorage.getItem("name");
+    document.getElementById("userEmail").textContent = localStorage.getItem("email");
+    document.getElementById("userMobile").textContent = localStorage.getItem("mobile");
+    document.getElementById("userGender").textContent = localStorage.getItem("gender");
+    document.getElementById("userAddress").textContent = localStorage.getItem("address");
+  </script>
+</body>
+</html>

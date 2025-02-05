@@ -1,0 +1,16 @@
+
+A.1. Window Object
+1. Write a script that shows a “typing message” appearing in a new child window. 
+The new window should close after few seconds of displaying your message.
+
+A.2. Location Object
+1. Make your own welcoming page of a registration form to display a greeting for the user by his name, then show a display of his info (address, gender, email, mobile).
+Note: The welcoming page is the page that should be displayed after registration.
+The registration form should contain fields for name, email, mobile, gender, address
+and show “timeout” that fires after 30 seconds if the user hasn’t entered any data 
+
+B. Object
+1.	write a script that allows you to create a rectangle object that 
+•  Should have width and height properties.
+•  Implement two methods for calculating its area and perimeter return value.
+•  Implement displayInfo() function to display a message declaring the   width, height, area and perimeter of the created object. 

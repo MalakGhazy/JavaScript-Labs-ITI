@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min&Max</title>
+</head>
+<body>
+    <script>
+        function findMinMax(...numbers)
+        {
+            const min = Math.min(...numbers);//spread operator
+            const max = Math.max(...numbers);
+            return {min,max};
+        }
+
+        const numbers = [5,10,2,8,3];
+
+        const {min,max} = findMinMax(...numbers);
+
+        console.log(`Min : ${min}`);
+        console.log(`Max : ${max}`);  
+    </script>
+</body>
+</html>

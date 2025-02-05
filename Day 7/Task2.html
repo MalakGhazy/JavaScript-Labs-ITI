@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <script>
+        const fruits = ["apple", "strawberry", "banana", "orange", "mango"];
+        // a. test that every element in the given array is a string
+        const allStrings = fruits.every(function(fruit)
+        {
+           return typeof fruit ==="string";
+        });
+        console.log(allStrings);//true
+
+        // b. test that some of array elements starts with "a"
+        const startWithA =  fruits.some(function(fruit)
+        {
+            return fruit.startsWith("a");
+        });
+        console.log(startWithA);//true
+        
+        // c. generates new array filtered from the given array with only elements that starts with "b" or "s"
+        const filteredFruits = fruits.filter(function(fruit){
+            return fruit.startsWith("b") || fruit.startsWith("s");
+        });
+        console.log(filteredFruits);//Strawberry , banana
+        
+        // d. generate new array each element of the new array contains a string
+        //    declaring that you like the give fruit element
+        const lovedFruits = fruits.map(function (fruit)
+        {
+            return "I Love " + fruit;
+        });
+        console.log(lovedFruits);
+        
+        // e. use forEach to display all elements of the new array from previous point
+        lovedFruits.forEach(function (fruit) {
+        console.log(fruit);
+        });
+    </script>
+</body>
+</html>
